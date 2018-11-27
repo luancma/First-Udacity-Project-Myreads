@@ -4,6 +4,10 @@ This is the starter template for the final assessment project for Udacity's Reac
 
 Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
 
+## MAterias de apoio
+Tomei como base o projeto Contacts desenvolvido pelo Tyler ao decorrer do curso, e também tive como base o projeto https://github.com/sagarchoudhary96/My-Reads, onde utilizei de uma parte do código correspondente ao componente Search.
+Para a conclusão do projeto, também tirei dúvidas com professores da faculdade, onde eles me ajudaram a entender um pouco melhor o comportamento de alguns componentes. 
+
 ## TL;DR
 
 To get started developing right away:
