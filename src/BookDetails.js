@@ -17,7 +17,10 @@ class BookDetails extends Component {
     const books = this.props.books
     return (
       <div className="bookshelf">
-        <h2 className="bookshelf-title">{this.props.title}</h2>
+        <h2 className="bookshelf-title">
+          {this.props.title}
+        </h2>
+
         <div className="bookshelf-books">
           <ol className="books-grid">
             {books.map((book, index) => (
@@ -25,9 +28,9 @@ class BookDetails extends Component {
                     book={book} 
                     key={index} 
                     onUpdate={(shelf) => {
-                        this.bookUpdateStatus(book, shelf)
+                      this.bookUpdateStatus(book, shelf)
                     }}
-                 />
+                />
             ))}
           </ol>
         </div>

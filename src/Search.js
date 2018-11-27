@@ -5,7 +5,7 @@ import * as BooksAPI from './BooksAPI'
 
 class Search extends Component {
     state = {
-        Books: [],
+        books: [],
         query: ''
       }
     
@@ -40,12 +40,15 @@ class Search extends Component {
               books = books.filter((book) => (book.imageLinks))
               books = this.changeBootStatus(books)
               this.setState(() => {
-                return {Books: books}
+                return {books: books}
               })
             }
           })
         } else {
-          this.setState({Books: [], query: ''})
+          this.setState({
+            books: [], 
+            query: ''
+          })
         }
       }
     
@@ -70,7 +73,7 @@ class Search extends Component {
             <div className="search-books-results">
               <ol className="books-grid">
                 {this.state.query.length > 0 && 
-                    this.state.Books.map((book, index) => (
+                    this.state.books.map((book, index) => (
                         <Book 
                             book={book} 
                             key={index} 

@@ -15,21 +15,21 @@ const ListBook = props => {
           <div>
             <BookDetails 
               books={props.books.filter((book) => (
-                book.shelf === "currentlyReading"))} 
+                book.shelf == "currentlyReading"))} 
                 onChangeShelf={props.onChange}
                 title="currently reading" 
             />
 
             <BookDetails 
               books={props.books.filter((book) => (
-                book.shelf === "read"))} 
+                book.shelf == "read"))} 
                 onChangeShelf={props.onChange}
                 title="read" 
             />
 
             <BookDetails 
               books={props.books.filter((book) => (
-                book.shelf === "wantToRead"))} 
+                book.shelf == "wantToRead"))} 
                 onChangeShelf={props.onChange}
                 title="want to read" 
             />
